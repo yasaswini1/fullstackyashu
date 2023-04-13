@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First form</title>
+    <style>
+   form {
+				margin: 0 auto;
+				width: 400px;
+				padding: 1em;
+				border: 1px solid #ccc;
+				border-radius: 1em;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			form li + li {
+				margin-top: 1em;
+			}
+
+			label {
+				display: inline-block;
+				width: 90px;
+				text-align: right;
+			}
+
+			input,
+			textarea {
+				width: 300px;
+				box-sizing: content-box;
+				border: 1px solid red;
+			}
+
+			input:focus,
+			textarea:focus {
+				border-color: pink;
+			}
+
+			textarea {
+				vertical-align: top;
+				height: 5em;
+			}
+
+			.button {
+				padding-left: 90px;
+			}
+
+			button {
+				margin-left: 0.25em;
+        border: 2px solid violet;
+			}
+  
+    </style>
+</head>
+<body>
+    <form action="/my-handling-form-page" method="post" >
+        <ul>
+         <li>
+           <label for="user">User:</label>
+           <input type="text" id="name" name="user_name">
+         </li>
+         <li>
+           <label for="mail">E-mail:</label>
+           <input type="email" id="mail" name="user_email">
+         </li>
+         <li>
+           <label for="msg">Comment:</label>
+           <textarea id="msg" name="user_message"></textarea>
+         </li>
+         <li class="button">
+           <button>send your Message</button>
+         </li>
+        </ul>
+       </form>
+       
+</body>
+</html>
